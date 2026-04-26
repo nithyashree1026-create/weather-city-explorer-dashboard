@@ -44,3 +44,7 @@ git clone https://github.com/your-username/weather-city-explorer-dashboard.git
 
 ## Author
 Nithya Siri
+
+## 📌 Status
+This project is completed and deployed successfully.
+
