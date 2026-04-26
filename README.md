@@ -19,4 +19,20 @@ A premium web-based weather dashboard that provides real-time weather updates al
 - 🕘 Recent search history with delete & clear option  
 - 🎤 Voice search for city input  
 - 📍 Current location weather detection  
-- 🌗 Dark / Light mode toggle  
+- 🌗 Dark / Light mode toggle
+- 🌡️ Temperature unit toggle (°C / °F)  
+- 💬 Dynamic weather-based quotes  
+- ⏳ Loading animation for better UX
+
+- ---
+
+## 🛠️ Tech Stack
+
+- HTML  
+- CSS  
+- JavaScript  
+- WeatherAPI  
+- Wikipedia API  
+
+---
+
