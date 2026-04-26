@@ -35,4 +35,10 @@ A premium web-based weather dashboard that provides real-time weather updates al
 - Wikipedia API  
 
 ---
+## ⚙️ Setup Instructions
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/weather-city-explorer-dashboard.git
 
