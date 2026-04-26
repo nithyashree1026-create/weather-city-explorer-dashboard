@@ -39,7 +39,8 @@ A premium web-based weather dashboard that provides real-time weather updates al
 
 1. Clone the repository
 
-```bash
+```
+bash
 git clone https://github.com/your-username/weather-city-explorer-dashboard.git
 
 ## Author
@@ -47,4 +48,7 @@ Nithya Siri
 
 ## 📌 Status
 This project is completed and deployed successfully.
+
+## 📸 Screenshot
+![Project Screenshot](main.png)
 
