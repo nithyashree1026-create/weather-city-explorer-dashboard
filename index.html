@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather & City Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-stars"></div>
+
+<main class="container">
+
+  <header class="header">
+    <h1>🌤️ Weather & City Explorer</h1>
+    <p>Search any city and explore weather with famous places</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="📍 Enter city name..." />
+      <button onclick="searchWeather()">Search</button>
+      <button onclick="startVoice()">🎤</button>
+      <button onclick="useLocation()">📍</button>
+      <button onclick="toggleTheme()">🌙</button>
+      <button onclick="toggleTemp()">°C/°F</button>
+    </div>
+
+    <p id="message"></p>
+  </header>
+
+  <section class="dashboard">
+
+    <div class="left-panel">
+
+      <div class="weather-card main-card">
+        <h2 id="currentCity">Mysore, India</h2>
+        <p id="currentDate">--</p>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+        <h1 id="temperature">--°C</h1>
+        <h3 id="condition">--</h3>
+
+        <button id="favoriteBtn" onclick="addFavorite()">⭐ Add to Favorite</button>
+
+        <p id="weatherQuote">🌍 Keep going no matter the weather.</p>
+
+        <div class="quick-info">
+          <div><span>Feels Like</span><b id="feelsLike">--°C</b></div>
+          <div><span>Humidity</span><b id="humidity">--%</b></div>
+          <div><span>Wind</span><b id="wind">-- km/h</b></div>
+        </div>
+
+        <div class="mini-info">
+          <p>💧 Pressure: <b id="pressure">--</b></p>
+          <p>👁️ Visibility: <b id="visibility">--</b></p>
+          <p>🍃 Air Quality: <b id="airQuality">--</b></p>
+        </div>
+      </div>
+
+      <div class="forecast-section">
+        <div class="forecast-card">
+          <h3>Yesterday</h3>
+          <p id="yesterdayDate">--</p>
+          <h2 id="yesterdayTemp">--°C</h2>
+          <p id="yesterdayCondition">--</p>
+        </div>
+
+        <div class="forecast-card active">
+          <h3>Today</h3>
+          <p id="todayDate">--</p>
+          <h2 id="todayTemp">--°C</h2>
+          <p id="todayCondition">--</p>
+        </div>
+
+        <div class="forecast-card">
+          <h3>Tomorrow</h3>
+          <p id="tomorrowDate">--</p>
+          <h2 id="tomorrowTemp">--°C</h2>
+          <p id="tomorrowCondition">--</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="right-panel">
+
+      <div class="image-slider">
+        <img id="cityImage" src="" alt="City Image" />
+
+        <button class="arrow left" onclick="prevSlide()">‹</button>
+        <button class="arrow right" onclick="nextSlide()">›</button>
+
+        <div class="slider-content">
+          <span id="exploreTag">📍 Exploring Mysore</span>
+          <h2 id="placeName">Mysore Palace</h2>
+          <p id="placeDesc">Famous place</p>
+        </div>
+
+        <div id="dots" class="dots"></div>
+      </div>
+
+      <div class="details-famous-grid">
+
+        <div class="details-card">
+          <h2>🔮 More Details</h2>
+
+          <div class="details-grid">
+            <div class="detail-box">🌡️ <span>Feels Like</span><b id="dFeels">--</b></div>
+            <div class="detail-box">💦 <span>Humidity</span><b id="dHumidity">--</b></div>
+            <div class="detail-box">🌬️ <span>Wind</span><b id="dWind">--</b></div>
+            <div class="detail-box">💧 <span>Pressure</span><b id="dPressure">--</b></div>
+            <div class="detail-box">👁️ <span>Visibility</span><b id="dVisibility">--</b></div>
+            <div class="detail-box">🍃 <span>Air Quality</span><b id="dAir">--</b></div>
+            <div class="detail-box">🌅 <span>Sunrise</span><b id="sunrise">--</b></div>
+            <div class="detail-box">🌇 <span>Sunset</span><b id="sunset">--</b></div>
+          </div>
+        </div>
+
+        <div class="famous-card">
+          <h2>🏛️ Famous Places</h2>
+          <div id="famousPlaces"></div>
+        </div>
+
+      </div>
+
+      <div class="history-card">
+        <h2>🕘 Recent Searches</h2>
+        <div id="searchHistory"></div>
+      </div>
+
+      <div class="history-card">
+        <h2>⭐ Favorite Cities</h2>
+        <div id="favoriteCities"></div>
+      </div>
+
+      <div class="cities-card">
+        <div class="cities-header" onclick="toggleCities()">
+          <h2>🇮🇳 Explore Indian Cities</h2>
+          <span id="cityToggleIcon">▼</span>
+        </div>
+
+        <div id="cityCategories" class="hidden-cities"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>Made with ❤️ by Nithya</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
