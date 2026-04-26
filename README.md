@@ -48,3 +48,5 @@ Nithya Siri
 ## 📌 Status
 This project is completed and deployed successfully.
 
+## 📸 Screenshot
+![Project Screenshot](main.png)
